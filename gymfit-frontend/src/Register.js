@@ -8,6 +8,7 @@ function Register({ onRegistered }) {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [password, setPassword] = useState(''); // Added password state
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,6 +18,7 @@ function Register({ onRegistered }) {
     firstName,
     lastName,
     email,
+    password,
     phoneNumber,
     };
 
@@ -74,6 +76,16 @@ function Register({ onRegistered }) {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
+        </div>
+        <div>
+            <label className="form-label">Password</label>
+            <input
+                type="password"
+                className="form-control"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                />
         </div>
         <div className="mb-3">
           <label className="form-label">Phone Number</label>

@@ -15,6 +15,8 @@ namespace GymFitBE.Models
 
         public string Email { get; set; }
 
+        public string Password { get; set; }
+
         public required string PhoneNumber { get; set; }
 
     }

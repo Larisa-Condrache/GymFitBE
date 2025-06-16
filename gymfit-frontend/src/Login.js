@@ -1,18 +1,31 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { api } from './api';
 
 function Login({ onLogin }) {
-  const [role, setRole] = useState('client');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+    const [role, setRole] = useState('client');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-    // Later: Send data to backend
-    console.log(`Logging in as ${role}: ${email} / ${password}`);
-    onLogin(role); // simulate login success
-  };
+        const userData = {
+            role: role === 'trainer' ? 1 : 0,
+            email,
+            password,
+        };
+
+        try {
+            console.log("Sending this to API:", userData);
+            const response = await api.post('/Clients/login', userData);
+            alert(`✅ Welcome back, ${response.data.firstName}!`);
+            onLogin && onLogin(role);
+        } catch (error) {
+            console.error('Login error:', error.response?.data || error.message);
+            alert('❌ Login failed: Incorrect email or password.');
+        }
+    };
 
   return (
     <div className="container mt-5" style={{ maxWidth: 400 }}>

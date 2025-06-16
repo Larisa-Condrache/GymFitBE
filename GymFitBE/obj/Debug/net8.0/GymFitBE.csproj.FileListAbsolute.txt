@@ -171,3 +171,4 @@ C:\Users\chips\Desktop\GymFitBE\GymFitBE\obj\Debug\net8.0\GymFitBE.pdb
 C:\Users\chips\Desktop\GymFitBE\GymFitBE\obj\Debug\net8.0\GymFitBE.genruntimeconfig.cache
 C:\Users\chips\Desktop\GymFitBE\GymFitBE\obj\Debug\net8.0\ref\GymFitBE.dll
 C:\Users\chips\Desktop\GymFitBE\GymFitBE\obj\Debug\net8.0\GymFitBE.sourcelink.json
+C:\Users\chips\Desktop\GymFitBE\GymFitBE\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

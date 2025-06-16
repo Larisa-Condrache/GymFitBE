@@ -9,6 +9,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
 {
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+
     options.AddDefaultPolicy(policy =>
     {
         policy.WithOrigins("http://localhost:3000")
@@ -38,8 +45,6 @@ builder.Services.AddControllers()
 
 var app = builder.Build();
 
-app.UseCors();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -66,6 +71,7 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
+app.UseCors("AllowFrontend");
 app.UseCors();
 
 app.UseHttpsRedirection();

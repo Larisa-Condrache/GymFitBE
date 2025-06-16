@@ -8,7 +8,6 @@ namespace GymFitBE
         public GymFitContext(DbContextOptions<GymFitContext> options) : base(options)
         {
         }
-        public DbSet<Trainer> Trainers { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Client> Clients { get; set; }
 

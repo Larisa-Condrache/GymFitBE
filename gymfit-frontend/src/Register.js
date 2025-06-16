@@ -13,11 +13,11 @@ function Register({ onRegistered }) {
     e.preventDefault();
 
     const userData = {
-        Role: role === 'trainer' ? 1 : 0,
-        FirstName: firstName,
-        LastName: lastName,
-        Email: email,
-        PhoneNumber: phoneNumber,
+    role: role === 'trainer' ? 1 : 0,
+    firstName,
+    lastName,
+    email,
+    phoneNumber,
     };
 
     try {

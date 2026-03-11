@@ -43,13 +43,6 @@ GymFitBE/
 
 ## ⚙️ Rulare locală
 
-### Backend
-```bash
-# Deschide GymFitBE.sln în Visual Studio
-# Configurează connection string-ul pentru PostgreSQL în appsettings.json
-# Rulează proiectul (F5)
-```
-
 ### Frontend
 ```bash
 cd gymfit-frontend

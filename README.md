@@ -9,9 +9,9 @@ O aplicație web fullstack pentru gestionarea unei săli de sport, cu sistem de 
 ## 🚀 Funcționalități implementate
 
 - **Înregistrare și autentificare** pentru două tipuri de utilizatori:
-  - 👤 **Client** — acces la funcționalitățile destinate membrilor sălii
-  - 🏃 **Trainer** — acces la funcționalitățile destinate antrenorilor
-- **Sistem de roluri** — redirecționare și acces diferențiat în funcție de tipul contului
+  - 👤 **Client** - acces la funcționalitățile destinate membrilor sălii
+  - 🏃 **Trainer** - acces la funcționalitățile destinate antrenorilor
+- **Sistem de roluri** - redirecționare și acces diferențiat în funcție de tipul contului
 - **API REST** backend pentru gestionarea autentificării
 
 ---
@@ -19,13 +19,13 @@ O aplicație web fullstack pentru gestionarea unei săli de sport, cu sistem de 
 ## 🛠️ Tehnologii folosite
 
 ### Backend
-- **C# / ASP.NET** — API REST
-- **PostgreSQL** — bază de date relațională
-- **pgAdmin 4** — administrarea bazei de date
+- **C# / ASP.NET** - API REST
+- **PostgreSQL** - bază de date relațională
+- **pgAdmin 4** - administrarea bazei de date
 
 ### Frontend
-- **React** — interfață utilizator
-- **JavaScript / HTML / CSS** — structură și stilizare
+- **React** - interfață utilizator
+- **JavaScript / HTML / CSS** - structură și stilizare
 
 ---
 
